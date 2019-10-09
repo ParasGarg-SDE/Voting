@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerNewUser"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:textColor="@color/pink"
+            android:text="Register Here !!!"/>
+
+        <EditText
+            android:id="@+id/aadharNumber"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Aadhar Number"
+            android:inputType="number" />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName" />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Voter ID"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_credit_card_black_24dp"
+            android:inputType="textCapCharacters"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:hint="Phone Number"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/districtName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="District Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_location_city_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="City Name"
+            android:inputType="text" />
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/ic_check_black_24dp"
+            android:text="SUBMIT"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</RelativeLayout>

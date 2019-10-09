@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnMore"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="ABOUT US !!!"
+            android:textAlignment="center"
+            android:textColor="@color/graylight"
+            android:textSize="50dp" />
+
+        <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:textColor="@color/graylight"
+                android:text="You can vote from anywhere directly from your mobile.
+The voter is able to vote remotely and no physical presence is required.
+Voting is powered by Internet. However cellular based voting is also a possibility
+Mobile Voting is very user friendly to all the method and is far better than postal ballot,booth voting,proxy voting.
+
+Vote now with Vooting
+
+Total time taken - less than a minute
+Paper work - NIL
+Attestation or officials required -NIL
+
+Steps in Mobile Voting:
+1)Register Yourself
+2)Authenticate yourself via aadhar password
+3)Confirm your Displayed Details
+3)Select your preferred option
+4)Press vote
+5)Your Vote is collected with US.
+
+Advantages:
+Reduce 90% Voter Dropout
+Reduce 90% Cost Of Election
+Reduce 90% Election Time Requirement
+Reduce 90% Manpower Requirement
+10x Better Security Due to Aadhar and Encryption"/>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

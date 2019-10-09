@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:text="Welcome to Voting"/>
+        <TextView
+            android:layout_below="@+id/TV1"
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="The application that will make the voting process very easy and efficient. We promise the possibility of convenient,easy and safe way to capture and count the votes in an election."
+            android:textSize="15sp"
+            android:layout_marginTop="25dp" />
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_below="@+id/TV2"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center">-->
+
+            <Button
+                android:id="@+id/learnmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:text="Learn More"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/TV2"
+                android:textColor="#fff" />
+<!--        </LinearLayout>-->
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="50dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/RL1">
+
+        <EditText
+            android:id="@+id/AadharNumber"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Aadhar Number" />
+
+        <EditText
+            android:layout_below="@+id/AadharNumber"
+            android:id="@+id/pass"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" android:orientation="horizontal"-->
+<!--            android:layout_below="@+id/RL2"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center"/>-->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:text="Log IN"
+            android:layout_below="@+id/pass"
+            android:layout_centerInParent="true"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/registerHere"
+            android:layout_below="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="New Voter?  Register Now!!"
+            android:background="@color/graylight"
+            android:textColor="@color/colorPrimary" />
+<!--                />-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
